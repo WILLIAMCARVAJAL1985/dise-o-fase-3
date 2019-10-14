@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>OVI - Fase 3</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<span class="logo"><img src="images/logo.png" alt="" /></span>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Notación - Diagrama de secuencia</h1>
+									</header>
+
+									<!-- Content -->									
+										<h2 id="content">Objeto y línea de vida</h2>
+										<p>Un objeto se representa como una línea vertical discontinua, llamada línea de vida, 
+										con un rectángulo de encabezado con el nombre del objeto en su interior. 
+										También se puede incluir a continuación el nombre de la clase, separando ambos 
+										por dos puntos.</p>
+
+										<p>Si el objeto es creado en el intervalo de tiempo representado en el diagrama, 
+										la línea comienza en el punto que representa ese instante y encima se coloca el objeto. 
+										Si el objeto es destruido durante la interacción que muestra el diagrama, la línea de 
+										vida termina en ese punto y se señala con un aspa de ancho equivalente al del foco de 
+										control.</p>
+
+										<p>En el caso de que un objeto existiese al principio de la interacción representada 
+										en el diagrama, dicho objeto se situará en la parte superior del diagrama,
+										por encima del primer mensaje. Si un objeto no es eliminado en el tiempo que dura 
+										la interacción, su línea de vida se prolonga hasta la parte inferior del diagrama.</p>
+
+										<p>La línea de vida de un objeto puede desplegarse en dos o más líneas para 
+										mostrar los diferentes flujos de mensajes que puede intercambiar un objeto, 
+										dependiendo de alguna condición.</p>
+
+										<h2 id="content">Foco de control o activación</h2>
+
+										<p>Se representa como un rectángulo delgado superpuesto a la línea de vida del objeto. 
+										Su largo dependerá de la duración de la acción. La parte superior del rectángulo 
+										indica el inicio de una acción ejecutada por el objeto y la parte inferior su finalización.</p>
+
+										<h2 id="content">Mensaje</h2>
+
+										<p>Un mensaje se representa como una flecha horizontal entre las líneas de 
+										vida de los objetos que intercambian el mensaje. La flecha va desde el objeto 
+										que envía el mensaje al que lo recibe. Además, un objeto puede mandarse un 
+										mensaje a sí mismo, en este caso la flecha comienza y termina en su línea de vida.</p>
+
+										<p>La flecha tiene asociada una etiqueta con el nombre del mensaje y los argumentos. 
+										También pueden ser etiquetados los mensajes con un número de secuencia, sin embargo, 
+										este número no es necesario porque la localización física de las flechas que representan 
+										a los mensajes ya indica el orden de los mismos.</p>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menú</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Inicio</a></li>
+										<li>
+											<span class="opener">Lecturas</span>
+											<ul>
+												<li><a href="lectura1.html">Diagrama de Interacción</a></li>
+												<li><a href="lectura2.html">Diagrama de secuencia</a></li>
+												<li><a href="lectura3.html">Diagrama de colaboración</a></li>
+												<li><a href="lectura4.html">Notación - Diagrama de secuencia</a></li>
+												<li><a href="lectura5.html">Notación - Diagrama de colaboración</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Multimedia</span>
+											<ul>
+												<li><a href="multimedia1.html">Video - Diagrama de Interacción</a></li>
+												<li><a href="multimedia2.html">Video - Diagrama de secuencia</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Actividades</span>
+											<ul>
+												<li><a href="actividad1.html">Actividades 1</a></li>
+												<li><a href="actividad2.html">Actividades 2</a></li>
+											</ul>
+										</li>
+										<li><a href="autores.html">Autores</a></li>
+									</ul>
+								</nav>
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; OVI - Fase 3. Juan Zapata</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
